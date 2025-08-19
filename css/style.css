@@ -132,14 +132,27 @@ footer .navbar-item a{
 }
 /*------------------media-query-------------------------------------------*/
 @media (min-width:1000px){
-header +.container{
-    padding-right: 0 !important;
+root{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
-    .hero-section{
+main{
+padding-left: 15px;
+
+}
+    .hero-section {
+        margin: -35px -99px 0 0;
     background:url('/img/bg-intro-desktop.svg') center / cover no-repeat;
 }
+ .cover{
+    overflow: hidden;
+    gap: 20px;
+}
+
 .menu-bg{
     flex-direction: row-reverse;
+    
 }
 .left{
     display: flex;
@@ -153,6 +166,11 @@ header +.container{
     color: white !important;
     padding: 10px 20px !important;
     width: 20vw;
+}
+
+footer div{
+    align-items: end;
+    justify-content: center;
 }
 
 }
